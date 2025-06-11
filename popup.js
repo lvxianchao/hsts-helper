@@ -1,20 +1,25 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // 复制域名按钮
-  document.getElementById("copy-domain").addEventListener("click", async () => {
-    try {
-      const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-      if (!tab) return;
-      
-      const url = new URL(tab.url);
-      await navigator.clipboard.writeText(url.hostname);
-      alert(`Domain copied: ${url.hostname}`);
-    } catch (error) {
-      console.error('Error copying domain:', error);
-    }
-  });
-
-  // 打开HSTS设置按钮
-  document.getElementById("go-hsts").addEventListener("click", () => {
-    chrome.tabs.create({ url: "chrome://net-internals/#hsts" });
+document.addEventListener('DOMContentLoaded', function() {
+  // Get current active tab
+  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+    if (!tabs || tabs.length === 0) return;
+    
+    const url = new URL(tabs[0].url);
+    const domain = url.hostname;
+    
+    // 复制域名按钮
+    document.getElementById('copy-domain').addEventListener('click', async function() {
+      try {
+        await navigator.clipboard.writeText(domain);
+        alert((window.i18n?.getMessage('copied_alert') || 'Domain copied:') + ' ' + domain);
+      } catch (err) {
+        console.error('Failed to copy domain:', err);
+        alert('Failed to copy domain: ' + err.message);
+      }
+    });
+    
+    // 打开HSTS设置按钮
+    document.getElementById('go-hsts').addEventListener('click', function() {
+      chrome.tabs.create({ url: 'chrome://net-internals/#hsts' });
+    });
   });
 });

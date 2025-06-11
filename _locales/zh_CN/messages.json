@@ -1,0 +1,17 @@
+{
+  "ext_name": {
+    "message": "HSTS 清理助手"
+  },
+  "ext_description": {
+    "message": "快速清理浏览器 HSTS 缓存，解决 HTTPS 报错问题。"
+  },
+  "copy_button": {
+    "message": "复制域名"
+  },
+  "goto_button": {
+    "message": "打开 HSTS 清理"
+  },
+  "copied_alert": {
+    "message": "已复制域名："
+  }
+}

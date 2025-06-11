@@ -1,0 +1,17 @@
+{
+  "ext_name": {
+    "message": "HSTS 도우미"
+  },
+  "ext_description": {
+    "message": "HTTPS 오류를 해결하기 위해 브라우저의 HSTS 캐시를 빠르게 지웁니다."
+  },
+  "copy_button": {
+    "message": "도메인 복사"
+  },
+  "goto_button": {
+    "message": "HSTS 설정 열기"
+  },
+  "copied_alert": {
+    "message": "도메인이 복사되었습니다: "
+  }
+}

@@ -1,64 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title data-i18n="title"></title>
+  <meta charset="UTF-8">
+  <title data-i18n="ext_name">HSTS Helper</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
       width: 300px;
       padding: 16px;
-      background-color: #f8f9fa;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #333;
+      line-height: 1.5;
     }
 
     .container {
-      background: white;
-      border-radius: 8px;
-      padding: 16px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      max-width: 100%;
+      margin: 0 auto;
     }
 
+
+
     h3 {
-      color: #2c3e50;
-      margin-bottom: 16px;
-      text-align: center;
+      margin: 0 0 12px 0;
+      color: #1a73e8;
+      font-size: 18px;
+      font-weight: 500;
     }
 
     .description {
-      color: #7f8c8d;
-      text-align: center;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
+      color: #5f6368;
       font-size: 14px;
     }
 
     .button-group {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
     }
 
     button {
-      width: 100%;
-      padding: 12px;
-      border: none;
-      border-radius: 6px;
+      padding: 10px 16px;
+      border: 1px solid #dadce0;
+      border-radius: 4px;
+      background: white;
+      color: #1a73e8;
       font-size: 14px;
       font-weight: 500;
       cursor: pointer;
       transition: all 0.2s ease;
-      border: 1px solid transparent;
+      text-align: center;
     }
 
     #copy-domain {
-      background: #4a90e2;
+      background: #1a73e8;
       color: white;
-      border-color: #4a90e2;
+      border-color: #1a73e8;
     }
 
     #go-hsts {
@@ -80,14 +76,16 @@
   </style>
 </head>
 <body>
+
   <div class="container">
-    <h3>HSTS Helper</h3>
-    <div class="description">Quickly clear browser HSTS cache to fix HTTPS errors.</div>
+    <h3 data-i18n="ext_name">HSTS Helper</h3>
+    <div class="description" data-i18n="ext_description">Quickly clear browser HSTS cache to fix HTTPS errors.</div>
     <div class="button-group">
-      <button id="copy-domain">Copy Domain</button>
-      <button id="go-hsts">Open HSTS Settings</button>
+      <button id="copy-domain" data-i18n="copy_button">Copy Domain</button>
+      <button id="go-hsts" data-i18n="goto_button">Open HSTS Settings</button>
     </div>
   </div>
+  <script src="i18n.js"></script>
   <script src="popup.js"></script>
 </body>
 </html>

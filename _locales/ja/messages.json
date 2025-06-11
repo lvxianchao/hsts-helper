@@ -1,0 +1,17 @@
+{
+  "ext_name": {
+    "message": "HSTS ヘルパー"
+  },
+  "ext_description": {
+    "message": "HTTPSエラーを解決するためにブラウザのHSTSキャッシュを素早くクリアします。"
+  },
+  "copy_button": {
+    "message": "ドメインをコピー"
+  },
+  "goto_button": {
+    "message": "HSTS設定を開く"
+  },
+  "copied_alert": {
+    "message": "ドメインをコピーしました："
+  }
+}

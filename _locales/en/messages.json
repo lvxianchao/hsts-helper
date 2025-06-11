@@ -1,0 +1,17 @@
+{
+  "ext_name": {
+    "message": "HSTS Helper"
+  },
+  "ext_description": {
+    "message": "Quickly clear browser HSTS cache to fix HTTPS errors."
+  },
+  "copy_button": {
+    "message": "Copy Domain"
+  },
+  "goto_button": {
+    "message": "Open HSTS Settings"
+  },
+  "copied_alert": {
+    "message": "Domain copied:"
+  }
+}

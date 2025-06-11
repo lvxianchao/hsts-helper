@@ -1,0 +1,17 @@
+{
+  "ext_name": {
+    "message": "Asistente HSTS"
+  },
+  "ext_description": {
+    "message": "Borra rápidamente la caché HSTS del navegador para solucionar errores HTTPS."
+  },
+  "copy_button": {
+    "message": "Copiar Dominio"
+  },
+  "goto_button": {
+    "message": "Abrir Configuración HSTS"
+  },
+  "copied_alert": {
+    "message": "Dominio copiado:"
+  }
+}
