@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "HSTS Cleaner",
+  "name": "HSTS Helper",
   "description": "Quickly clear browser HSTS cache to fix HTTPS errors.",
   "version": "1.0",
   "permissions": ["tabs", "clipboardWrite", "scripting"],
