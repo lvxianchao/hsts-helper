@@ -1,12 +1,18 @@
-<div align="center">
-
-[English](README.md) | [中文](README.zh-CN.md)
-
+<div align="right" style="margin-bottom: 1em;">
+  <a href="README.md">English</a> | 
+  <a href="README.zh-CN.md">中文</a>
 </div>
 
-# HSTS 清理助手
-
-该 Chrome 插件用于帮助用户快速解决由于 Cloudflare 强制 HSTS 导致的 HTTPS 报错问题。
+<div align="center">
+  <h1>HSTS 清理助手</h1>
+  <p>一个 Chrome 扩展，帮助用户快速解决由于 Cloudflare 强制 HSTS 导致的 HTTPS 报错问题。</p>
+  
+  <div>
+    <a href="https://github.com/lvxianchao/hsts-helper">
+      <img src="https://img.shields.io/badge/View%20on-GitHub-blue?style=for-the-badge&logo=github" alt="在 GitHub 上查看">
+    </a>
+  </div>
+</div>
 
 ## 功能
 
@@ -20,7 +26,7 @@
 
 ## 安装方式
 
-1. 下载 zip 文件并解压
+1. 下载 ZIP 文件并解压
 2. 打开 Chrome 扩展管理页：`chrome://extensions`
 3. 开启右上角"开发者模式"
 4. 点击"加载已解压的扩展程序"，选择解压目录即可
@@ -31,12 +37,6 @@
 
 ## 许可证
 
-MIT
+MIT © [lvxianchao](https://github.com/lvxianchao)
 
----
 
-<div align="center">
-
-[English](README.md) | [中文](README.zh-CN.md)
-
-</div>
