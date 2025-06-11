@@ -1,9 +1,21 @@
 {
-  "name": "HSTS 清理助手",
+  "name": "HSTS Helper",
   "short_name": "HSTS Helper",
   "version": "1.0",
-  "description": "快速清理浏览器 HSTS 缓存，解决 HTTPS 报错问题。",
-  "author": "吕显超",
-  "homepage_url": "https://freegamesonline.space",
-  "manifest_version": 3
+  "description": "Quickly clear browser HSTS cache to fix HTTPS errors. 快速清理浏览器 HSTS 缓存，解决 HTTPS 报错问题。",
+  "author": "Lv Xianchao",
+  "homepage_url": "https://github.com/lvxianchao/hsts-helper",
+  "manifest_version": 3,
+  "default_locale": "en",
+  "offline_enabled": true,
+  "permissions": ["tabs", "clipboardWrite", "scripting"],
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
 }
