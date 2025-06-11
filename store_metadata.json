@@ -1,0 +1,9 @@
+{
+  "name": "HSTS 清理助手",
+  "short_name": "HSTS Helper",
+  "version": "1.0",
+  "description": "快速清理浏览器 HSTS 缓存，解决 HTTPS 报错问题。",
+  "author": "吕显超",
+  "homepage_url": "https://freegamesonline.space",
+  "manifest_version": 3
+}
